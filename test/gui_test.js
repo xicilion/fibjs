@@ -100,6 +100,7 @@ describe("gui", () => {
             var received_message;
             win.on("message", (msg) => {
                 received_message = msg.data;
+                console.log(received_message);
             });
 
             win.eval(`window.postMessage(window.innerWidth + "|" + window.innerHeight);`);
