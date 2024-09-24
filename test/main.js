@@ -59,7 +59,7 @@ run("./http_test.js");
 run("./mq_test.js");
 run("./rtc_test.js");
 
-if (process.platform != "linux")
+// if (process.platform != "linux")
     run("./gui_test.js");
 
 run("./registry_test.js");
